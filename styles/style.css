@@ -31,8 +31,8 @@ button:hover
 
 }
 a:hover{
-color: aqua;
-    background-color: rgb(169, 136, 20);
+color: rgb(169, 136, 20);
+    background-color: rgb(189, 143, 218);
     border: 2px green;
 }
 p{
@@ -53,4 +53,16 @@ th,td{
  background-color: rgb(102, 131, 131);
  border-radius: 10px;
  font-family: cursive;
+}
+.izq{
+  width:300px;
+  margin:auto;
+  float:left;
+  align-items: center;
+}
+.der{
+  width:300px;
+  margin:auto;
+  float: right;
+  align-items: center;
 }

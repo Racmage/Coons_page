@@ -4,30 +4,52 @@
         <title>Coon's page</title>
         <link rel="stylesheet" href="styles/style.css">
         <link rel="icon" type="image/x-icon" href="imgs/favicon.jpeg">
-        <center>  
-        <h1><a href="https://unayta.es/wp-content/uploads/2016/03/116.jpg" title="TDC" target="_blank">Teoria de colores</a></h1> 
-         
-        </center>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <div class="social">
+        <ul>
+            <li class="social"><a href="https://github.com/Racmage" target="_blank">Mi Github</a></li>
+            <li class="social"><a href="https://www.instagram.com/j_bej037/" target="_blank">Mi Instagram</a></li>
+            <li class="social"><a href="https://www.linkedin.com/in/juanbej/" target="_blank">Mi portafolio</a></li>
+          </ul>
+        </div>
+          <br>
+          <br>
     </head>
 <body>
     <a href="C:\Users\HUAWEI\Desktop\VS\HTML"></a>
 <center>
+    <br>
+    <hr>
 <h2>¡HOLA, MUNDO!</h2>
-<h3>¡Bienvenido! esta es mi primera página con HTML, abajo encontrarás<br>cositas interesantes sobre lo que he aprendido.</h3>
+<h3><span>¡Bienvenido!</span> esta es mi primera página con HTML, abajo encontrarás<br>cositas interesantes sobre lo que he aprendido.</h3>
+<div id="indice">
+<ul>
+<li><a href="#c1">- Botones y tablas. </a></li> 
+<li><a href="#c2"> - Listas.</a></li>
+</ul>
+</div>
 <hr>
+<br>
+<h2 id="c1">Botones y tablas</h2>
+<div class="cont">
+<div class="izq">
 <p>Clickear la caja hará que la página sea refrescada:</p>
 <img src="imgs/htblogo.png" alt="htblogo" width=180 height=150 usemap="#Caja">
 <map name="Caja">
 <area shape="poly" coords="90,20, 28,60, 30,90, 90,125, 145,90, 145,63" href="http://127.0.0.1:5500/index.html" alt="Caja">
 </map>
+</div>
+<div class="der">
 <p>El botón de abajo crea una nueva pestaña de esta misma página:</p>
+
 <a href="http://127.0.0.1:5500/index.html" target="_blank">
 
     <button onclick="/127.0.0.1:5500/index.html">Esta página</button>
 </a>
-<br></br>
+</div>
+</div>
 <p>Una tabla muy sencilla:</p>
-<table style="width: 100%;">
+<table style="width: 70%;">
     <colgroup>
     <col span="2">
     <col span="2" style="background-color: blue">
@@ -58,13 +80,14 @@
     </tr>
 </table>
 <br>
+<h2 id="c2">Listas</h2>
 <p>
     Tenemos listas:
 </p>
 
 <div class="izq">
 <h3>Ordenadas:
-<ol>
+<ol type="I">
     <li>Buscar producto</li>
     <ul>
         <li>comparar</li>
@@ -102,7 +125,6 @@
     </ul>
 </h3>
 </div>
-
 </center>
 </body>
 </html>

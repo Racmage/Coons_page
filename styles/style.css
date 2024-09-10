@@ -69,6 +69,7 @@ p{
   color: rgb(132, 186, 233);
   font-style: oblique;
   font-family:sans-serif;
+  
 }
 table,th, td{
   border: 3px solid rgb(205, 187, 126);
@@ -84,6 +85,10 @@ th,td{
  border-radius: 10px;
  font-family: cursive;
 }
+.parr{
+  width: 100%;
+  margin: 10px;
+}
 .izq{
   width:300px;
   margin-left: 25%;
@@ -92,7 +97,13 @@ th,td{
 }
 .der{
   width:300px;
-  margin-left:12%;
+  margin-right:32%;
   float: left;
   align-items: center;
 }
+.responsive{
+  font-size: 2vw;
+  margin: 10%;
+  background-color: #2cdc9c;
+  color: black;
+  }

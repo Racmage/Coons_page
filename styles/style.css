@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
  div .social{
   
   width: 4%;
@@ -25,6 +28,11 @@ span{
   background-repeat: no-repeat;
   background-attachment: fixed; 
   background-size: 100% 100%;
+}
+#border
+{
+  margin: 70px;
+  border: 1px solid #4CAF50;
 }
 body{
     background-color: rgb(22, 25, 40);
@@ -76,7 +84,7 @@ table,th, td{
   text-align: center;
 }
 table{
-  border-spacing: 8px;
+  border-spacing: 6px;
   border-style: dashed;
 }
 th,td{
@@ -84,6 +92,23 @@ th,td{
  background-color: rgb(102, 131, 131);
  border-radius: 10px;
  font-family: cursive;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
 }
 .parr{
   width: 100%;
@@ -106,4 +131,40 @@ th,td{
   margin: 10%;
   background-color: #2cdc9c;
   color: black;
+  }
+  .col{
+    color: rgb(119, 205, 205);
+    margin: 1%;
+    width: 7%;
+  }
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 75%;
+    background-color: #1e2971;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #24597c;
+  }
+  
+  .form{
+    border-radius: 5px;
+    background-color: #48a064;
+    padding: 15px;
+    width: 75%;
   }

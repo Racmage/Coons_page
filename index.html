@@ -26,14 +26,15 @@
 <center>
     <br>
     <hr>
-<h2>¡HOLA, MUNDO!</h2>
+<h2 id="border">¡HOLA, MUNDO!</h2>
 <h3><span>¡Bienvenido!</span> esta es mi primera página con HTML, abajo encontrarás<br>cositas interesantes sobre lo que he aprendido.</h3>
 <div id="indice">
 <ul>
 <li><a href="#c1" class="index">- Botones y tablas. </a></li> 
-<li><a href="#c2" class="index"> - Listas.</a></li>
+<li><a href="#c2" class="index"> - Columnas.</a></li>
 <li><a href="#c3" class="index"> - Iframe.</a></li>
 <li><a href="#c4" class="index"> - Responsive.</a></li>
+<li><a href="#c4" class="index"> - Formulario.</a></li>
 </ul>
 </div>
 <hr>
@@ -85,34 +86,31 @@
 </table>
 <br>
 <br>
-<h2 id="c2">Listas</h2>
-<p>
-    Tenemos listas:
-</p>
-<div class="parr">
-<div class="izq">
-<h3>Ordenadas:
-<ol type="I">
-    <li>Buscar producto</li>
-    <ul>
-        <li>comparar</li>
-        <li>elegir</li>
-        <li>tantear precios</li>
-    </ul>
-    <br>
-    <li>Comprar producto</li>
-    <br>
-    <li>Usar producto</li>
-    <ul>
-        <li>mirar usos en internet</li>
-        <li>cacharrear</li>
-    </ul>
-</ol>
-</h3>
-</div>
-<div class="der">
-    <h3>No ordenadas:
-    <ul>
+<h2 id="c2">Columnas y listas</h2>
+<div class="row">
+    <div class="column">
+      <h2>Ordenadas</h2>
+      
+      <ol type="I" class="col">
+        <li>Buscar producto</li>
+        <ul class="col">
+            <li>comparar</li>
+            <li>elegir</li>
+            <li>tantear precios</li>
+        </ul>
+        <br>
+        <li>Comprar producto</li>
+        <br>
+        <li>Usar producto</li>
+        <ul>
+            <li>mirar usos en internet</li>
+            <li>cacharrear</li>
+        </ul>
+    </ol>
+    </div>  
+    <div class="column">
+      <h2>No ordenadas</h2>
+      <ul class="col">
         <li>Ejercitarse</li>
         <ol>
             <li>calentar</li>
@@ -128,11 +126,21 @@
         <br>
         <li>Estudiar</li>
     </ul>
-</h3>
-</div>
-</div>
-<br>
-<br>
+    </div>
+    <div class="column">
+      <h2>Descriptivas</h2>
+      <dl class="col">
+        <dt>Cuaderno</dt>
+        <dd>rojo</dd>
+        <dd>100_hojas</dd>
+        <br>
+        <dt>Libro</dt>
+        <dd>nombre</dd>
+        <dd>capitulos</dd>
+      </dl>
+    </div>
+  </div>
+
 <h2 id="c3">Iframe</h2>
 <p>Un Iframe sirve para acceder a una página web desde otra página web.<br>En este caso, usamos esta página para acceder a esta misma página</p>
 <iframe src="http://127.0.0.1:5500/index.html" height="400" width="1200" title="Iframe"></iframe>
@@ -141,6 +149,27 @@
 <div class="responsive">
 <h3 class="responsive">Este texto es responsivo respecto a la página.</h3>
 </div>
+<br>
+<h2 id="c5">Formulario</h2>
+<div class="form">
+    <form>
+      <label for="fname">Primer nombre</label>
+      <input type="text" id="fname" name="firstname" placeholder="Tu nombre..">
+  
+      <label for="lname">Apellido</label>
+      <input type="text" id="lname" name="lastname" placeholder="Tu apellido..">
+  
+      <label for="country">País</label>
+      <select id="country" País="country">
+        <option value="australia">Colombia</option>
+        <option value="canada">México</option>
+        <option value="usa">USA</option>
+      </select>
+    
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
 </center>
 </body>
 </html>
